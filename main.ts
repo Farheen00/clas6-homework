@@ -1,17 +1,45 @@
-//nested objects
- 
-let eyeClinic ={ doctor1:{doctorName : "Dr. Saad",speciality:"eye specialist",
-fees:2000,
-days:"mon,wed,fri"} ,
-doctor2:{doctorName: "Dr.Raj",
-speciality:"eye surgeon",
-fees :1500,
-days:"tues,sat"}
+// object
+let personDetails:{
+    firstName : string ,
+    lastName : string ,
+    age : number ,
+    nationality : string ,
+    isMarried : boolean 
+
+} = {firstName : "Farheen" ,
+lastName : "Usman" ,
+age : 34 ,
+nationality : "Pakistani" ,
+isMarried : true ,
 }
-console.log(eyeClinic);
-console.log(eyeClinic.doctor1);
-console.log(eyeClinic.doctor1.fees);
-console.log(eyeClinic.doctor1.days);
-console.log(eyeClinic.doctor2);
-console.log(eyeClinic.doctor2.speciality);
-console.log(eyeClinic.doctor2.doctorName);
+// print object
+console.log(personDetails);
+// to access any specific detail in an object
+console.log(personDetails.firstName);
+console.log(personDetails.lastName);
+console.log(personDetails.age);
+console.log(personDetails.nationality);
+console.log(personDetails.isMarried);
+//array  and object in an object
+let personInformation:{
+    fullName : string ,
+    age : number ,
+    CNIC : number ,
+   religion : string ,
+    degrees :string[] ,
+    contact :{phoneNumber: number ,
+    emailAddress : string}
+} = {fullName : "Farheen Usman" ,
+age : 34 ,
+CNIC : 4230169703318 ,
+religion : "Islam" ,
+degrees : ["matric" , "intermediate" , "graduate" , "masters"] ,
+contact : {phoneNumber:3333666 ,
+emailAddress : "farheenusman2@gmail.com"}
+}
+console.log(personInformation);
+console.log(personInformation.fullName);
+console.log(personInformation.degrees);
+console.log(personInformation.degrees[3]);
+console.log(personInformation.contact);
+console.log(personInformation.contact.emailAddress);
